@@ -3,7 +3,7 @@
 
 _error(msg)
 {
-    self tell(va("^1error: ^7%s", msg));
+    self tell("^1error: ^7%s", msg));
 }
 
 get_dvar_str_default(dvar, default_value)
@@ -312,5 +312,5 @@ pay(args)
 balance()
 {
     value = self bank_read();
-    self tell(va("you have ^2$%s ^7in your bank account.", value));
+    self tell("you have ^2$%s ^7in your bank account.", value));
 }
